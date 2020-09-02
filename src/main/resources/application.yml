@@ -56,7 +56,7 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: HospitalManage
+          group: user19-hospitalmanage
           destination: local
           contentType: application/json
         event-out:
