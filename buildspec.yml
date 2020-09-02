@@ -84,14 +84,6 @@ phases:
                   ports:
                     - containerPort: 8080
                   imagePullPolicy: Always
-                  livenessProbe:
-                    httpGet:
-                      path: '/actuator/health'
-                      port: 8080
-                    initialDelaySeconds: 120
-                    timeoutSeconds: 2
-                    periodSeconds: 5
-                    failureThreshold: 5
         EOF
 cache:
   paths:
